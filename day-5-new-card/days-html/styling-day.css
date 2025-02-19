@@ -1,0 +1,94 @@
+:root {
+    --body-background: hsl(0, 0%, 8%);
+    --card-background: hsl(0, 0%, 12%);
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    --hover-states: hsl(75, 94%, 57%);
+    --links-background: hsl(0, 0%, 20%);
+    --hover-text: #555;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid ; */
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    color: #fff;
+    background-color: var(--body-background);
+}
+
+.card-container {
+    width: 375px;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+
+    background-color: var(--card-background);
+}
+
+.topic-img {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.topic-img img {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    display: block;
+}
+
+.switch {
+    display: flex;
+    margin: 1rem 0 0;
+    justify-content: space-between;
+}
+
+.practice,
+.challenge {
+    font-size: 20px;
+    width: 49%;
+    text-align: center;
+    padding: 2px 0;
+    /* border: 1px solid; */
+    background-color: var(--links-background);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.switch-link {
+    padding: 3px 30px;
+}
+.activity:hover,
+.activity:active {
+    color: var(--hover-states);
+}
+
+.socials {
+    margin: 1rem 0;
+}
+
+.return-btn,
+.socials-link {
+    background-color: var(--hover-states);
+    margin: .5rem 0;
+    border-radius: 5px;
+}
+.return-btn a,
+.socials-link a {
+    color: #555;
+    padding: .5rem;
+    text-align: center;
+}
