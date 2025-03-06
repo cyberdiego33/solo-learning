@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.grid-container {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.red {
+    background-color: red;
+}
+
+.white {
+    background-color: #fff;
+}

@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    display: flex;
+}
+.container div {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+.container .love-text {
+    padding-right: 2px;
+}
+
+@keyframes change-text {
+    25% {
+        content: "Anime 📺";
+    }
+    50% {
+        content: "Gym 💪";
+    }
+    75% {
+        content: "Titties 🤗";
+    }
+}
+
+.love-text::after {
+    background-color: blue;
+    border-radius: 6px;
+    padding: .5rem;
+    content: "Game 🎮";
+    height: 100%;
+    width: fit-content;
+    margin-left: 2px;
+
+    animation: change-text 4s ease-in-out 0s infinite;
+}

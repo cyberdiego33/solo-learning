@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+div {
+    border-radius: 5000px;
+    padding: 30px;
+}
+
+/* .circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 3000px;
+
+    background: 
+            radial-gradient( circle, yellow 20%, red 20% 40%, blue 40% 60%, black 60% 80%, white 80% 100%);
+} */

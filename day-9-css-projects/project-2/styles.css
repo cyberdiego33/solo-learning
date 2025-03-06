@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20% 15%;
+}
+
+.search-bar input {
+    padding: 10px 5px;
+    width: 30%;
+    min-width: 100px;
+    border-radius: 2px;
+    border: 2px solid rgb(150, 141, 141);
+
+    transition: width 0.8s ease-in-out;
+}
+.search-bar input::placeholder {
+    font-size: 18px;
+}
+
+.search-bar input:active,
+.search-bar input:focus {
+    width: 100%;
+    outline: none;
+    max-width: 700px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
