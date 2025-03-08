@@ -11,33 +11,18 @@ body {
 }
 
 .circle {
-    background-color: #c5b8b8;
-    border: 10px solid #c5b8b8;
+    border: 20px solid #c5b8b8;
+    border-top-color: var(--color);
     border-radius: 1000px;
     width: 150px;
     aspect-ratio: 1/1;
 
-    animation: loading 0.5s ease-in-out infinite;
+    animation: loading 0.5s linear infinite ;
     --color: rgb(155, 131, 87);
 }
 
 @keyframes loading {
-    0% {
-        border-top-color: var(--color);
-    }
-    25% {
-        border-top-color: #c5b8b8;
-        border-right-color: var(--color);
-    }
-    50% {
-        border-right-color: #c5b8b8;
-        border-bottom-color: var(--color);
-    }
-    75% {
-        border-bottom-color: #c5b8b8;
-        border-left-color: var(--color);
-    }
     100% {
-        border-left-color: var(--color);
+        transform: rotate(360deg);
     }
 }
