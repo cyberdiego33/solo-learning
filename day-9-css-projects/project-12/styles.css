@@ -1,0 +1,52 @@
+*,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    background-color: lightslategray;
+    padding: 200px;
+}
+.card {
+    position: relative;
+    width: 200px;
+    aspect-ratio: 1/1;
+    aspect-ratio: 1/1;
+    background-color: #1e1197;
+    padding: 2rem 1rem;
+    display: grid;
+    place-content: center;
+    border-radius: 20px;
+
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.answer {
+    display: none;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card:hover .question {
+    display: none;
+}
+.card:hover .answer {
+    display: block;
+    transform: rotateY(180deg);
+}
+
+.answer,
+.question {
+    backface-visibility: hidden;
+}
