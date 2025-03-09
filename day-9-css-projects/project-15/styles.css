@@ -1,0 +1,45 @@
+:root{
+    --color: red;
+}
+
+body {
+    padding: 100px 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.progress-bar {
+    width: 50%;
+    background-color: rgb(219, 206, 206);
+    border-radius: 30px;
+    overflow: hidden;
+}
+.progress-color {
+    height: 30px;
+    width: 25%;
+    border-radius: 900px;
+    background-color: var(--color);
+    /* background-color: rgba(49, 35, 49, 0.4); */
+
+    animation: progress 6s linear infinite;
+}
+
+@keyframes progress {
+    50% {
+        width: 50%;
+        --color: purple;
+    }
+
+    75% {
+        width: 100%;
+        --color: blue;
+    }
+
+    100% {
+        width: 100%;
+        --color: blue;
+    }
+}
